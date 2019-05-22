@@ -1,0 +1,31 @@
+---
+name: Elon Musk
+path: "2019/21/业界大佬/美国\U0001F1FA\U0001F1F8"
+organization:
+- 业界大佬
+- "美国\U0001F1FA\U0001F1F8"
+weekly report content:
+- title: 本周工作总结
+  category: summary
+  content: |
+    1. 这里是周成员需要写的周报内容支持`markdown`
+    2. 只要注意缩进可以写很长
+    > `markdown` 引用
+    3. 我们继续[markdown](https://devhints.io/markdown)
+- title: 下周工作目标
+  category: plan
+  content: |
+    1. xxxxx
+    2. xxxxx
+- title: 有遇到挑战或者困难么？希望团队怎么帮助你？
+  category: challenge
+  content: |
+    1. xxxxx
+    2. xxxxx
+- title: 感想／吐槽，随便聊聊
+  category: impression
+  content: |-
+    1. xxxxx
+    2. xxxxx
+year: 2019
+week: '21'
