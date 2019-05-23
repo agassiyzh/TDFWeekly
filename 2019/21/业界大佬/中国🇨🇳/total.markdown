@@ -22,7 +22,7 @@
 
 1. 学了100个新单词
 2. 访问印度
-![雷军访问印度](/images/leijun.jpg){:height="300px"}
+![雷军访问印度](/images/leijun.jpg)
 
 
 ### 下周工作目标
