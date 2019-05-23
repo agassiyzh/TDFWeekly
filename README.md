@@ -116,6 +116,8 @@ ruby copy_weekly_yaml_template.rb
 
 比如
 
+
+
 [雷军2019年29周的周报](2019/21/业界大佬/中国🇨🇳/雷军.yaml)
 
 [马云2019年29周的周报](2019/21/业界大佬/中国🇨🇳/马云.yaml)
@@ -124,12 +126,87 @@ ruby copy_weekly_yaml_template.rb
 
 [Cook2019年29周的周报](2019/21/业界大佬/美国🇺🇸/Timothy%20Donald%20Cook.yaml)
 
+>>>
+
 通过以下命令生成个人和团队周报。
 
 ```bash
 ruby make_weekly_markdown.rb
 ```
- 
+
+现在的目录结构是这样的：
+
+```
+└── 21
+    ├── challenge.markdown
+    ├── impression.markdown
+    ├── plan.markdown
+    ├── summary.markdown
+    ├── total.markdown
+    └── 业界大佬
+        ├── challenge.markdown
+        ├── impression.markdown
+        ├── plan.markdown
+        ├── summary.markdown
+        ├── total.markdown
+        ├── 中国🇨🇳
+        │   ├── challenge.markdown
+        │   ├── impression.markdown
+        │   ├── plan.markdown
+        │   ├── summary.markdown
+        │   ├── total.markdown
+        │   ├── 雷军.markdown
+        │   ├── 马云.markdown
+        │   ├── 雷军.yaml
+        │   ├── 马云.yaml
+        │   ├── 马化腾.markdown
+        │   ├── 马化腾.yaml
+        │   └── 另一个小组织
+        │       ├── challenge.markdown
+        │       ├── summary.markdown
+        │       ├── total.markdown
+        │       ├── 路人乙.markdown
+        │       ├── 路人甲.markdown
+        │       ├── 路人乙.yaml
+        │       └── 路人甲.yaml
+        └── 美国🇺🇸
+            ├── Elon Musk.markdown
+            ├── Elon Musk.yaml
+            ├── Mark Elliot Zuckerberg.markdown
+            ├── Mark Elliot Zuckerberg.yaml
+            ├── Timothy Donald Cook.markdown
+            ├── Timothy Donald Cook.yaml
+            ├── challenge.markdown
+            ├── summary.markdown
+            └── total.markdown
+```
+
+每个成员的yaml分别生成了markdown，不同组织层级都生成了模版中定义的`summary`、`plan`、`challenge`、`impression`（如果成员一个主题中的内容跟模版一样没做改动，认为这个主题没写不会出现在主题文件中）。方便成员或者主管对感兴趣的主题单独查看。对了，cook觉得模版中的四个分类不够于是他自己加了一个other分类，系统也是支持的。
+
+total文件是所以成员合并的周报。
+
+## 自动化
+
+有了脚本，配合gitlab 持续集成可以达到行云流水的效果。
+
+在gitlab中配置定时任务，在周四通过钉钉提醒大家写周报，钉钉消息可以直接打开这一周的周报页面。
+
+![cron config](images/cron_config.png)
+
+![dingding notification](images/dingding.png)
+
+gitlab runner task每周自动生成每个成员的周报模版：
+
+![create template](images/create_template.png)
+
+成员完成周报推送到gitlab自动生成markdown放在`pages`分支：
+
+![create markdown](images/create_markdown.png)
+
+
 ## TODO
 
 - [ ] 生成个人页面
+
+具体脚本和示例周报可以点击`阅读原文`，访问项目主页查看。
+ 
