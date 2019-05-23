@@ -8,24 +8,15 @@ weekly report content:
 - title: 本周工作总结
   category: summary
   content: |
-    1. 这里是周成员需要写的周报内容支持`markdown`
-    2. 只要注意缩进可以写很长
-    > `markdown` 引用
-    3. 我们继续[markdown](https://devhints.io/markdown)
-- title: 下周工作目标
-  category: plan
-  content: |
-    1. xxxxx
-    2. xxxxx
+    1. `WWDC 2019`宣传图确定
+    ![wwdc](images/wwdc.png)
 - title: 有遇到挑战或者困难么？希望团队怎么帮助你？
   category: challenge
   content: |
-    1. xxxxx
-    2. xxxxx
-- title: 感想／吐槽，随便聊聊
-  category: impression
+    1. 中美贸易战，很可能中方对手机提升关税。如何应对？
+- title: 其他分类
+  category: other
   content: |-
-    1. xxxxx
-    2. xxxxx
+    1. 成员可以在这里些模版之外的东西
 year: 2019
 week: '21'
