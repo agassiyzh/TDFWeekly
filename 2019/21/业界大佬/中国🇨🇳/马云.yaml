@@ -8,24 +8,18 @@ weekly report content:
 - title: 本周工作总结
   category: summary
   content: |
-    1. 这里是周成员需要写的周报内容支持`markdown`
-    2. 只要注意缩进可以写很长
-    > `markdown` 引用
-    3. 我们继续[markdown](https://devhints.io/markdown)
+    1. 思考2020年集体婚礼上的黄段子
 - title: 下周工作目标
   category: plan
   content: |
-    1. xxxxx
-    2. xxxxx
+    1. 思考2020年集体婚礼上的黄段子
 - title: 有遇到挑战或者困难么？希望团队怎么帮助你？
   category: challenge
   content: |
-    1. xxxxx
-    2. xxxxx
+    1. 段子枯竭，群策群力
 - title: 感想／吐槽，随便聊聊
   category: impression
   content: |-
-    1. xxxxx
-    2. xxxxx
+    1. 这周都是晚上9点后下班的，没劲ICU，是福报。
 year: 2019
 week: '21'
