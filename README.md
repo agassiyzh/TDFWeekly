@@ -124,11 +124,15 @@ ruby copy_weekly_yaml_template.rb
 
 [Cook2019年29周的周报](2019/21/业界大佬/美国🇺🇸/Timothy%20Donald%20Cook.yaml)
 
+……
+
 通过以下命令生成个人和团队周报。
 
 ```bash
 ruby make_weekly_markdown.rb
 ```
+
+## 自动化
  
 ## TODO
 
