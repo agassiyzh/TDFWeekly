@@ -75,9 +75,14 @@ def yaml_to_markdown(file_path)
   s = ""
 
   content.each do |item|
-    content_in_template = (@template.select { |t| item["category"] == t["category"] }).first["content"]
+    is_category_in_template = @category_in_template.include?(item["category"])
 
-    next if item["content"] == content_in_template or content_in_template.gsub(/[[:space:]]/, "").length == 0
+    if is_category_in_template
+      content_in_template = (@template.select { |t| item["category"] == t["category"] }).first["content"]
+
+      next if item["content"] == content_in_template or item["content"].gsub(/[[:space:]]/, "").length == 0
+    end
+
     s << "### " + item["title"] + "\n\n" + item["content"] + "\n\n"
 
     next unless @category_in_template.include?(item["category"])
