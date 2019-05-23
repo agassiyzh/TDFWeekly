@@ -5,7 +5,7 @@
 ### 本周工作总结
 
 1. `WWDC 2019`宣传图确定
-![wwdc](images/wwdc.png)
+![wwdc](/images/wwdc.png)
 
 
 ### 有遇到挑战或者困难么？希望团队怎么帮助你？

@@ -3,7 +3,7 @@
 ## Timothy Donald Cook - 业界大佬 - 美国🇺🇸
 
 1. `WWDC 2019`宣传图确定
-![wwdc](images/wwdc.png)
+![wwdc](/images/wwdc.png)
 
 ## Mark Elliot Zuckerberg - 业界大佬 - 美国🇺🇸
 
